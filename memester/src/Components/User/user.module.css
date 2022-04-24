@@ -1,34 +1,50 @@
 .cont{
-    border: 4px solid black;
+    /* border: 4px solid black; */
     border-radius: 5px;
     width: 80%;
     margin: 0px auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .avatar img{
     text-align: center;
     margin: 1rem;
-    border:4px solid black;
+    border:4px solid rgb(0, 0, 0);
     border-radius: 100%;
 }
+.name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0rem 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #00ff9d;
+    color: rgb(0, 0, 0);
+    border: 4px solid black;
+}
 .bio{
+    background-color: rgb(255, 215, 55);
+    color: rgb(0, 0, 0);
     width: 40%;
     font-style: italic;
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 0.8rem 0px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    border: 4px solid black;
+    
 }
+
 .done{
     display: flex;
     justify-content: center;
 
 }
 .done > *{
-    color: rgb(255, 0, 251);
+    color: #000000;
     margin: 1.2rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -38,16 +54,21 @@
     flex-direction: column;
 }
 .sand{
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
+    width: 70%;
+    margin: 0 auto;
+    border: 4px solid #000000;
+    background-color: rgb(255, 215, 55);
     display: flex;
     justify-content: space-evenly;
     padding: 0.2rem;
+    border-radius: 5px;
+    
 }
 .ref{
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
+    color: #000000;
 }
 .post{
     display: flex;
@@ -64,8 +85,11 @@
     /* width: 25%; */
     margin: 0.1rem;
 }
-@media (max-width:540px){
+@media (max-width:680px){
     .cont{
+        width: 100%;
+    }
+    .sand{
         width: 100%;
     }
         

@@ -8,6 +8,11 @@ const User = () => {
             <section className={user.avatar}>
                 <img  src='https://i.pravatar.cc/150?img=3' alt="user" />
                 <br />
+                <span className={user.name}>
+                    Daniel Memer
+                </span>
+                <br />
+                <br />
                 <span className={user.bio}>
                     "Main Zhukega Nhi Saala"
                 </span>
