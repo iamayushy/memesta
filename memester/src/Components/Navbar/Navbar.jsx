@@ -3,6 +3,7 @@ import  home from '../../assets/home.svg'
 import  add from '../../assets/add.svg'
 import  navigation from '../../assets/navigation.svg'
 import  sign from '../../assets/user.svg'
+import {Link} from 'react-router-dom'
 const Navbar = () => {
     return(
         <div className={nav.nav}>
@@ -12,16 +13,16 @@ const Navbar = () => {
                 </section>
                 <section className={nav.gate}>
                     <section className={nav.go}>
-                        <a href="#"><img src={home} alt="home" /></a>
+                        <Link to='/'><img src={home} alt="home" /></Link>
                     </section>
                     <section className={nav.go}>
-                        <a href="#"><img src={navigation} alt="navigate" /></a>
+                        <Link to="/explore"><img src={navigation} alt="navigate" /></Link>
                     </section>
                     <section className={nav.go}>
-                        <a href="#"><img src={add} alt="add" /></a>
+                        <Link to="/add"><img src={add} alt="add" /></Link>
                     </section>
                     <section className={nav.go}>
-                        <a href="#"><img src={sign} alt="" /></a>
+                        <Link to="/user"><img src={sign} alt="" /></Link>
                     </section>
                 </section>
             </section>
