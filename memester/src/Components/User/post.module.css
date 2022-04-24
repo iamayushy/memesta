@@ -1,0 +1,21 @@
+.box{
+    margin: 1rem;
+    display: block;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    /* width: 30rem; */
+    /* background-color: rgb(227, 255, 255); */
+    text-align:start;
+    height: 80vh;
+
+}
+.image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/dub.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+

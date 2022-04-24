@@ -1,0 +1,73 @@
+.cont{
+    border: 4px solid black;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.avatar img{
+    text-align: center;
+    margin: 1rem;
+    border:4px solid black;
+    border-radius: 100%;
+}
+.bio{
+    width: 40%;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.8rem 0px;
+}
+.done{
+    display: flex;
+    justify-content: center;
+
+}
+.done > *{
+    color: rgb(255, 0, 251);
+    margin: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+}
+.sand{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+}
+.ref{
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.post{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.post > *{
+    width: 20%;
+    flex: 1 1 33%;
+}
+
+.post img{
+    /* width: 25%; */
+    margin: 0.1rem;
+}
+@media (max-width:540px){
+    .cont{
+        width: 100%;
+    }
+        
+
+}
