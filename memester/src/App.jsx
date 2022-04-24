@@ -5,16 +5,23 @@ import { Login } from './Components/Login/Login'
 import { User } from './Components/User/User'
 import { Post } from './Components/User/Post'
 import { Navbar } from './Components/Navbar/Navbar'
+import { Route, Routes } from 'react-router-dom'
+import { Add } from './Components/Add/Add'
+import { Home } from './Components/Home/Home'
+import { Explore } from './Components/Explore/Explore'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className="App">
      <Navbar/> 
-     {/* <Login/> */}
-     <User/>
-     {/* <Post/> */}
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='explore' element={<Explore/>}/>
+        <Route path='add' element={<Add/>}/>
+        <Route path='user' element={<User/>}/>
+      </Routes>
     </div>
   )
 }
